@@ -1,0 +1,1519 @@
+
+/* ///////////////////////Navbar Section/////////////////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --main-color:var(black);
+}
+
+h2{
+  font-family: "Poppins", sans-serif;
+}
+h3{
+  font-family: "Poppins", sans-serif;
+}
+p{
+  font-size: 17px;
+}
+
+
+.banner-content p {
+  color: white !important;
+}
+
+.banner-content h1 {
+  color: white;
+}
+
+.banner-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background-color: var(--color2);
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 0;
+  margin-bottom: 5%;
+  /* background-image: url(../images/monisha/11.jpg); */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.6 !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  overflow: hidden !important;
+
+}
+
+.banner-content {
+  position: absolute;
+  top: 55%;
+  left: 00%;
+  width: 50%;
+  transform: translate(45%, -50%);
+  border-left: 5px solid var(--subcolor2);
+  z-index: 3 !important;
+  padding-left: 3%;
+  text-align: center;
+}
+
+.banner-section .banner-content h2 {
+  color: white !important;
+  font-size: 50px;
+  text-align: center;
+}
+
+.banner-section .banner-content p{
+  color: white !important;
+  font-style: oblique;
+}
+
+/* -------------------navigation start ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+  color: #101010;
+}
+
+a {
+  text-decoration: none;
+}
+.header{
+
+  position: sticky;
+  top: 0; /* This makes the navbar stick to the top */
+  z-index: 1000; /* Ensures the navbar stays above other elements */
+  background-color: white; /* To avoid transparent background when sticky */
+  width: 100%; 
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.header .nav-item {
+  margin-left: 5rem;
+}
+
+.header .nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-size: 10px;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.header .nav-link:hover{
+  color: rgb(166, 157, 157);
+}
+
+.header .nav-logo {
+  width: 30px;
+}
+
+/* -------------------navigation end ------------- */
+
+
+/*----------------- welcome  section start------------------------ */
+.welcome-name-section{
+  width:100%;
+  height:100%;
+}
+.welcome-name-container{
+  width:100%;
+  height:100%;
+}
+.welcome-name-boxes{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.welcome-name-image{
+  width:47%;
+  height:100%;
+}
+.welcome-name-image img{
+  width: 100%;
+  height:600px !important;
+}
+.welcome-name-para{
+  width:47%;
+  height:100%;
+  padding:8% 2%;
+}
+.welcome-name-para h2{
+  font-size: 50px;
+  font-weight: 600 !important;
+}
+.welcome-name-para p{
+  padding-top:4%;
+}
+
+.welcomeAnimation{
+  display: inline-block;
+}
+.typed-out{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+
+/* -------------------------------about us scetion start ----------------------------------*/
+
+.about-banner img {
+  width: 100%;
+  height: 500px;
+}
+
+.aboutus-page {
+  width: 100%;
+  /* height: 100%; */
+  height: auto;
+  margin-top: 50px;
+  /* margin-bottom: 5%; */
+}
+
+
+.aboutus-container {
+  width: 100%;
+  height: 100%;
+
+}
+
+.aboutus-boxes {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  justify-content: space-between !important;
+
+}
+
+.abouts-para {
+  width: 47%;
+  height: 100%;
+  margin-top: 10%;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+.abouts-para h2{
+  font-size: 50px;
+  font-weight: 600 !important;
+}
+
+.who-we-are {
+  /* color: var(--maincolor); */
+  font-size: 30px;
+
+}
+
+.who-we-are .underline2 {
+  margin-left: 0 !important;
+  width: 50% !important;
+
+}
+
+.abouts-para p {
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  /* font-style: italic; */
+  /* font-size: 18px; */
+  /* color: grey; */
+
+
+
+}
+
+.aboutus-span {
+  font-weight: 600;
+  color: black;
+
+}
+
+.aboutus-span:hover {
+  color: var(--maincolor);
+}
+
+.abouts-para h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600 !important;
+  font-size: 35px !important;
+
+
+
+}
+
+
+.aboutus-image {
+  width: 47%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.aboutus-image img {
+    width:100%;
+    height:100%; 
+    border-top: 4px solid #1c3024 !important;
+    border-right:4px solid #1c3024 !important ;
+    padding:2%;
+
+}
+.aboutus-image:hover img {
+  transform: scale(1.5);
+  transition: 1s;
+  filter: saturate(0);
+}
+
+.aboutus-button {
+  background-color: var(--main-color);
+  font-family: "Quattrocento", serif;
+  border: none;
+  height: 50px;
+  font-weight: 500;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  font-size: 20px;
+  /* color:white; */
+
+
+
+}
+
+.aboutus-button:hover {
+  /* background-color: black; */
+  background-color: black;
+}
+.aboutus-page-image {
+  width: 47%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.aboutus-page-imgone {
+  width: 60%;
+  height: 95%;
+  position: absolute;
+  /* border-radius: 20px; */
+  /* top: 0; */
+  top: 0 !important;
+  left: 0;
+  z-index: 1;
+  /* border-top-left-radius: 50%; */
+  /* border-top-right-radius: 50%; */
+  object-fit: cover;
+  padding: 1%;
+  /* background-color: white; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  /* border: solid var(--subcolor); */
+
+}
+
+.aboutus-page-imgtwo {
+  width: 60%;
+  height: 95%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 5%;
+  z-index: 0;
+  /* border-radius: 20px; */
+  object-fit: cover;
+  margin-left:10%;
+  /* background-color: white; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  /* border: solid var(--subcolor); */
+
+
+}
+
+/* ------------about section end ------------- */
+
+
+/*----------------- vision  section start------------------------ */
+.vision-bcf-section{
+  width:100%;
+  height:100%;
+}
+.vision-bcf-container{
+  width:100%;
+  height:100%;
+}
+.vision-bcf-boxes{
+  width:100%;
+  height:100%;
+  display: flex !important;
+  justify-content: space-between;
+}
+.vision-bcf-image{
+  width:47%;
+  height:100%;
+  padding-bottom: 4%;
+}
+.vision-bcf-image img{
+  width: 100%;
+  height:600px !important;
+}
+.vision-bcf-para{
+  width:47%;
+  height:100%;
+  padding:8% 2%;
+  text-align: justify;
+}
+.vision-bcf-image h2{
+  font-size: 50px;
+  font-weight: 600 !important;
+}
+.vision-bcf-para p{
+  padding-top:4%;
+}
+.vision-bcf-para h2{
+  font-size: 30px;
+  font-weight: 650 !important;
+}
+/*------------------------------mediaQuery360------------------------------*/
+
+@media screen and (max-width:320px) {
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  
+    /*----------------- welcome  section start------------------------ */
+  .welcome-name-section{
+    width:100%;
+    height:100%;
+  }
+  .welcome-name-container{
+    width:100%;
+    height:100%;
+  }
+  .welcome-name-boxes{
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .welcome-name-image{
+    width:100%;
+    height:100%;
+  }
+  .welcome-name-image img{
+    width: 100%;
+    height:600px !important;
+  }
+  .welcome-name-para{
+    width:100%;
+    height:100%;
+    padding:8% 2%;
+  }
+  .welcome-name-para h2{
+    font-size: 30px;
+    font-weight: 600 !important;
+  }
+  .welcome-name-para p{
+    padding-top:4%;
+  }
+
+  .welcomeAnimation{
+    display: inline-block;
+  }
+
+  /* -------------------------------about us scetion start ----------------------------------*/
+
+  .about-banner img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .aboutus-page {
+    width: 100%;
+    /* height: 100%; */
+    height: auto;
+
+    margin-top: 50px;
+    /* margin-bottom: 5%; */
+
+  }
+
+
+  .aboutus-container {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .aboutus-boxes {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between !important;
+
+
+
+  }
+
+  .abouts-para {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+
+  }
+  .abouts-para h2{
+    font-size: 30px;
+    font-weight: 600 !important;
+    
+  }
+
+  .who-we-are {
+    /* color: var(--maincolor); */
+    font-size: 30px;
+
+  }
+
+  .who-we-are .underline2 {
+    margin-left: 0 !important;
+    width: 50% !important;
+
+  }
+
+  .abouts-para p {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    /* font-style: italic; */
+    /* font-size: 18px; */
+    /* color: grey; */
+
+
+
+  }
+
+  .aboutus-span {
+    font-weight: 600;
+    color: black;
+
+  }
+
+  .aboutus-span:hover {
+    color: var(--maincolor);
+  }
+
+  .abouts-para h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600 !important;
+    font-size: 35px !important;
+
+
+
+  }
+
+
+  .aboutus-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  .aboutus-image img {
+      width:100%;
+      height:100%; 
+      border-top: 4px solid #1c3024 !important;
+      border-right:4px solid #1c3024 !important ;
+      padding:2%;
+
+  }
+  .aboutus-image:hover img {
+    transform: scale(1.5);
+    transition: 1s;
+    filter: saturate(0);
+  }
+
+  .aboutus-button {
+    background-color: var(--main-color);
+    font-family: "Quattrocento", serif;
+    border: none;
+    height: 50px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 20px;
+    /* color:white; */
+
+
+
+  }
+
+  .aboutus-button:hover {
+    /* background-color: black; */
+    background-color: black;
+  }
+  .aboutus-page-image {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+
+  .aboutus-page-imgone {
+    width: 60%;
+    height: 95%;
+    position: absolute;
+    /* border-radius: 20px; */
+    /* top: 0; */
+    top: 0 !important;
+    left: 0;
+    z-index: 1;
+    /* border-top-left-radius: 50%; */
+    /* border-top-right-radius: 50%; */
+    object-fit: cover;
+    padding: 1%;
+    /* background-color: white; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* border: solid var(--subcolor); */
+
+  }
+
+  .aboutus-page-imgtwo {
+    width: 60%;
+    height: 95%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 5%;
+    z-index: 0;
+    /* border-radius: 20px; */
+    object-fit: cover;
+    margin-left:10%;
+    /* background-color: white; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* border: solid var(--subcolor); */
+
+
+  }
+
+  /* ------------about section end ------------- */
+
+
+  /*----------------- vision  section start------------------------ */
+  .vision-bcf-section{
+    width:100%;
+    height:100%;
+  }
+  .vision-bcf-container{
+    width:100%;
+    height:100%;
+  }
+  .vision-bcf-boxes{
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .vision-bcf-image{
+    width:100%;
+    height:100%;
+    padding-top: 15%;
+  }
+  .vision-bcf-image img{
+    width: 100%;
+    height:600px !important;
+  }
+  .vision-bcf-para{
+    width:100%;
+    height:100%;
+    padding:8% 2%;
+    text-align: justify;
+  }
+  .vision-bcf-image h2{
+    font-size: 30px;
+    font-weight: 600 !important;
+    padding-left: 2%;
+  }
+  .vision-bcf-para p{
+    padding-top:4%;
+  }
+  .vision-bcf-para h3{
+    font-size: 30px;
+    font-weight: 650 !important;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width:600px) {
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+    /*----------------- welcome  section start------------------------ */
+    .welcome-name-section{
+      width:100%;
+      height:100%;
+    }
+    .welcome-name-container{
+      width:100%;
+      height:100%;
+    }
+    .welcome-name-boxes{
+      width:100%;
+      height:100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .welcome-name-image{
+      width:100%;
+      height:100%;
+    }
+    .welcome-name-image img{
+      width: 100%;
+      height:600px !important;
+    }
+    .welcome-name-para{
+      width:100%;
+      height:100%;
+      padding:8% 2%;
+    }
+    .welcome-name-para h2{
+      font-size: 30px;
+      font-weight: 600 !important;
+    }
+    .welcome-name-para p{
+      padding-top:4%;
+    }
+  
+    .welcomeAnimation{
+      display: inline-block;
+    }
+  
+    /* -------------------------------about us scetion start ----------------------------------*/
+  
+    .about-banner img {
+      width: 100%;
+      height: 500px;
+    }
+  
+    .aboutus-page {
+      width: 100%;
+      /* height: 100%; */
+      height: auto;
+  
+      margin-top: 50px;
+      /* margin-bottom: 5%; */
+  
+    }
+  
+  
+    .aboutus-container {
+      width: 100%;
+      height: 100%;
+  
+    }
+  
+    .aboutus-boxes {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between !important;
+  
+  
+  
+    }
+  
+    .abouts-para {
+      width: 100%;
+      height: 100%;
+      margin-top: 10%;
+      /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  
+    }
+    .abouts-para h2{
+      font-size: 30px;
+      font-weight: 600 !important;
+      
+    }
+  
+    .who-we-are {
+      /* color: var(--maincolor); */
+      font-size: 30px;
+  
+    }
+  
+    .who-we-are .underline2 {
+      margin-left: 0 !important;
+      width: 50% !important;
+  
+    }
+  
+    .abouts-para p {
+      width: 100%;
+      height: 100%;
+      text-align: justify;
+      /* font-style: italic; */
+      /* font-size: 18px; */
+      /* color: grey; */
+  
+  
+  
+    }
+  
+    .aboutus-span {
+      font-weight: 600;
+      color: black;
+  
+    }
+  
+    .aboutus-span:hover {
+      color: var(--maincolor);
+    }
+  
+    .abouts-para h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 600 !important;
+      font-size: 35px !important;
+  
+  
+  
+    }
+  
+  
+    .aboutus-image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+  
+    }
+  
+    .aboutus-image img {
+      width:100%;
+        height:100%; 
+        border-top: 4px solid #1c3024 !important;
+        border-right:4px solid #1c3024 !important ;
+        padding:2%;
+  
+    }
+    .aboutus-image:hover img {
+      transform: scale(1.5);
+      transition: 1s;
+      filter: saturate(0);
+    }
+  
+    .aboutus-button {
+      background-color: var(--main-color);
+      font-family: "Quattrocento", serif;
+      border: none;
+      height: 50px;
+      font-weight: 500;
+      color: white;
+      border-radius: 5px;
+      width: 150px;
+      font-size: 20px;
+      /* color:white; */
+  
+  
+  
+    }
+  
+    .aboutus-button:hover {
+      /* background-color: black; */
+      background-color: black;
+    }
+    .aboutus-page-image {
+      width: 100%;
+      height: 450px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 10%;
+      margin-left: 10%;
+      margin-bottom: 10%;
+    }
+  
+    .aboutus-page-imgone {
+      width: 60%;
+      height: 95%;
+      position: absolute;
+      /* border-radius: 20px; */
+      /* top: 0; */
+      top: 0 !important;
+      left: 0;
+      z-index: 1;
+      /* border-top-left-radius: 50%; */
+      /* border-top-right-radius: 50%; */
+      object-fit: cover;
+      padding: 1%;
+      /* background-color: white; */
+      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+      /* border: solid var(--subcolor); */
+  
+    }
+  
+    .aboutus-page-imgtwo {
+      width: 60%;
+      height: 95%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 5%;
+      z-index: 0;
+      /* border-radius: 20px; */
+      object-fit: cover;
+      margin-left:10%;
+      /* background-color: white; */
+      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+      /* border: solid var(--subcolor); */
+  
+  
+    }
+  
+    /* ------------about section end ------------- */
+  
+  
+    /*----------------- vision  section start------------------------ */
+    .vision-bcf-section{
+      width:100%;
+      height:100%;
+    }
+    .vision-bcf-container{
+      width:100%;
+      height:100%;
+    }
+    .vision-bcf-boxes{
+      width:100%;
+      height:100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .vision-bcf-image{
+      width:100%;
+      height:100%;
+      padding-top: 15%;
+    }
+    .vision-bcf-image img{
+      width: 100%;
+      height:600px !important;
+    }
+    .vision-bcf-para{
+      width:100%;
+      height:100%;
+      padding:8% 2%;
+      text-align: justify;
+    }
+    .vision-bcf-image h2{
+      font-size: 30px;
+      font-weight: 600 !important;
+      padding-left: 2%;
+    }
+    .vision-bcf-para p{
+      padding-top:4%;
+    }
+    .vision-bcf-para h3{
+      font-size: 30px;
+      font-weight: 650 !important;
+    }
+  
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+    /*----------------- welcome  section start------------------------ */
+    .welcome-name-section{
+      width:100%;
+      height:100%;
+    }
+    .welcome-name-container{
+      width:100%;
+      height:100%;
+    }
+    .welcome-name-boxes{
+      width:100%;
+      height:100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .welcome-name-image{
+      width:100%;
+      height:100%;
+    }
+    .welcome-name-image img{
+      width: 100%;
+      height:600px !important;
+    }
+    .welcome-name-para{
+      width:100%;
+      height:100%;
+      padding:8% 2%;
+    }
+    .welcome-name-para h2{
+      font-size: 30px;
+      font-weight: 600 !important;
+    }
+    .welcome-name-para p{
+      padding-top:4%;
+    }
+  
+    .welcomeAnimation{
+      display: inline-block;
+    }
+    
+  
+    /* -------------------------------about us scetion start ----------------------------------*/
+  
+    .about-banner img {
+      width: 100%;
+      height: 500px;
+    }
+  
+    .aboutus-page {
+      width: 100%;
+      /* height: 100%; */
+      height: auto;
+  
+      margin-top: 50px;
+      /* margin-bottom: 5%; */
+  
+    }
+  
+  
+    .aboutus-container {
+      width: 100%;
+      height: 100%;
+  
+    }
+  
+    .aboutus-boxes {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between !important;
+  
+  
+  
+    }
+  
+    .abouts-para {
+      width: 100%;
+      height: 100%;
+      margin-top: 10%;
+      /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  
+    }
+    .abouts-para h2{
+      font-size: 30px;
+      font-weight: 600 !important;
+      
+    }
+  
+    .who-we-are {
+      /* color: var(--maincolor); */
+      font-size: 30px;
+  
+    }
+  
+    .who-we-are .underline2 {
+      margin-left: 0 !important;
+      width: 50% !important;
+  
+    }
+  
+    .abouts-para p {
+      width: 100%;
+      height: 100%;
+      text-align: justify;
+      /* font-style: italic; */
+      /* font-size: 18px; */
+      /* color: grey; */
+  
+  
+  
+    }
+  
+    .aboutus-span {
+      font-weight: 600;
+      color: black;
+  
+    }
+  
+    .aboutus-span:hover {
+      color: var(--maincolor);
+    }
+  
+    .abouts-para h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 600 !important;
+      font-size: 35px !important;
+  
+  
+  
+    }
+  
+  
+    .aboutus-image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+  
+    }
+  
+    .aboutus-image img {
+      width:100%;
+      height:100%; 
+      border-top: 4px solid #1c3024 !important;
+      border-right:4px solid #1c3024 !important ;
+      padding:2%;
+  
+    }
+    .aboutus-image:hover img {
+      transform: scale(1.5);
+      transition: 1s;
+      filter: saturate(0);
+    }
+  
+    .aboutus-button {
+      background-color: var(--main-color);
+      font-family: "Quattrocento", serif;
+      border: none;
+      height: 50px;
+      font-weight: 500;
+      color: white;
+      border-radius: 5px;
+      width: 150px;
+      font-size: 20px;
+      /* color:white; */
+  
+  
+  
+    }
+  
+    .aboutus-button:hover {
+      /* background-color: black; */
+      background-color: black;
+    }
+    .aboutus-page-image {
+      width: 100%;
+      height: 650px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 10%;
+      margin-left: 10%;
+      margin-bottom: 10%;
+    }
+  
+    .aboutus-page-imgone {
+      width: 60%;
+      height: 95%;
+      position: absolute;
+      /* border-radius: 20px; */
+      /* top: 0; */
+      top: 0 !important;
+      left: 0;
+      z-index: 1;
+      /* border-top-left-radius: 50%; */
+      /* border-top-right-radius: 50%; */
+      object-fit: cover;
+      padding: 1%;
+      /* background-color: white; */
+      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+      /* border: solid var(--subcolor); */
+  
+    }
+  
+    .aboutus-page-imgtwo {
+      width: 60%;
+      height: 95%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 5%;
+      z-index: 0;
+      /* border-radius: 20px; */
+      object-fit: cover;
+      margin-left:10%;
+      /* background-color: white; */
+      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+      /* border: solid var(--subcolor); */
+  
+  
+    }
+  
+    /* ------------about section end ------------- */
+  
+  
+    /*----------------- vision  section start------------------------ */
+    .vision-bcf-section{
+      width:100%;
+      height:100%;
+    }
+    .vision-bcf-container{
+      width:100%;
+      height:100%;
+    }
+    .vision-bcf-boxes{
+      width:100%;
+      height:100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .vision-bcf-image{
+      width:100%;
+      height:100%;
+      padding-top: 15%;
+    }
+    .vision-bcf-image img{
+      width: 100%;
+      height:600px !important;
+    }
+    .vision-bcf-para{
+      width:100%;
+      height:100%;
+      padding:8% 2%;
+      text-align: justify;
+    }
+    .vision-bcf-image h2{
+      font-size: 30px;
+      font-weight: 600 !important;
+      padding-left: 2%;
+    }
+    .vision-bcf-para p{
+      padding-top:4%;
+    }
+    .vision-bcf-para h3{
+      font-size: 30px;
+      font-weight: 650 !important;
+    }
+  
+}
+
+@media screen and (min-width:769px) and (max-width:900px) {}
+
+@media screen and (min-width:901px) and (max-width:992px) {}
+
+@media screen and (min-width:993px) and (max-width:1024px) {}
+
+@media screen and (min-width:1025px) and (max-width:1140px) {}
+
+
+
+    /*----------------- Footer------------------------ */
+
+
+/* General Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .column {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px 0;
+
+  
+}
+.footer .explore {
+
+  padding: 20px; /* Inner padding */
+  margin: 0 20px; /* Adjust margin */
+  border-radius: 5px; /* Optional: for rounded corners */
+  margin-left: 250px;
+  justify-content: center;
+}
+
+.footer h2, .footer h6 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: var(--bs-light);
+}
+
+.footer p, .footer a {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.footer .link__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer .link__item {
+  margin-bottom: 10px;
+}
+
+.footer .link__item a:hover {
+  color: #1c1818;
+}
+
+.footer .follows span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer .follows a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer .follows a:hover {
+  color: #1c1818;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .column {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .footer h2 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer h6 {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer .follows {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer h2 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer h6 {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer p {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer .follows a {
+    font-size: 20px;
+      font-family: "Poppins", sans-serif;
+  }
+}
